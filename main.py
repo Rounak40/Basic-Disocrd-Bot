@@ -10,7 +10,7 @@ import json
 import random
 
 #Enter your discord bot token & Prefix here
-TOKEN = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+TOKEN = ''
 prefix = "!"
 
 #define your client
@@ -30,8 +30,68 @@ async def on_ready():
 
 
 @client.command(pass_context=True)
-async def ping(ctx):
-    await client.say("Pong!")
+async def start(ctx):
+    await client.say(f"Hello {ctx.message.author.mention}, welcome the exotic self service panel. If you are ready, please run !ready command.")
+
+@client.command(pass_context=True)
+async def ready(ctx):
+    await client.say(f"1. What Are You Doing. Please Run !roles command if you are wanting to claim roles. Please run !purchase command if yoou want to buy.")
+
+@client.command(pass_context=True)
+async def purchase(ctx):
+    await client.say(f"2. Commands: ```!socials - followers, likes ext``` ```!tokens - discord tokens``` ```!vip - get access to loads of  methods```")
+
+@client.command(pass_context=True)
+async def purchase(ctx):
+    await client.say(f"1. What Are You Doing. Please Run !roles command if you are wanting to claim roles. Please run !purchase command if yoou want to buy.")
+
+@client.command(pass_context=True)
+async def roles(ctx):
+    await client.say(f"2. To claim youtube subscriber role please run !sub. to do staff aplication please run !staff. To claim status/roles from outher server run !claim")
+
+@client.command(pass_context=True)
+async def claim(ctx):
+    await client.say(f"3. Ok. Please wait for someone to assist you!")
+    time.sleep(1)
+    await client.say(f"<@1239162968780836906>")
+    await client.say(f"/b0tlock")
+
+@client.command(pass_context=True)
+async def socials(ctx):
+    await client.say(f"3. Ok. Please wait for someone to assist you!")
+    time.sleep(1)
+    await client.say(f"<@1239170316270567524>")
+    await client.say(f"/b0tlock")
+
+@client.command(pass_context=True)
+async def vip(ctx):
+    await client.say(f"3. Ok. Please wait for someone to assist you!")
+    time.sleep(1)
+    await client.say(f"<@1239170813773746247>")
+    await client.say(f"/b0tlock")
+
+@client.command(pass_context=True)
+async def tokens(ctx):
+    await client.say(f"3. Ok. Please wait for someone to assist you!")
+    time.sleep(1)
+    await client.say(f"<@1239170961287286834>")
+    await client.say(f"/b0tlock")
+
+@client.command(pass_context=True)
+async def sub(ctx):
+    await client.say(f"3. Ok. Please wait for someone to assist you!")
+    time.sleep(1)
+    await client.say(f"<@1239163603010064474>")
+    await client.say(f"/b0tlock")
+
+@client.command(pass_context=True)
+async def sub(ctx):
+    await client.say(f"3. Ok. Please wait for someone to assist you!")
+    time.sleep(1)
+    await client.say(f"<@1239164307896537189>")
+    await client.say(f"/b0tlock")
+    
+    
 
 
 @client.command(pass_context=True)
